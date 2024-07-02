@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "application.config.customer-url",
+    "type": "java.lang.String",
+    "description": "A description for 'application.config.customer-url'"
+  },
+  {
+    "name": "application.config.product-url",
+    "type": "java.lang.String",
+    "description": "A description for 'application.config.product-url'"
+  },
+  {
+    "name": "application.config.payment-url",
+    "type": "java.lang.String",
+    "description": "A description for 'application.config.payment-url'"
+  }
+]}

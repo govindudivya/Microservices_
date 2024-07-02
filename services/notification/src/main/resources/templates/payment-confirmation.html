@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Confirmation Email</title>
+</head>
+<body>
+    <h2>Dear [[${custName}]],</h2>
+    
+    <p>We have received a payment of [[${amount}]] for your order with reference [[${reference}]].</p>
+    
+    <p>Thank you for your payment!</p>
+    
+    <p>Best regards,</p>
+    <p>The Team</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation Email</title>
+</head>
+<body>
+    <h2>Dear [[${custName}]],</h2>
+    
+    <p>We are pleased to inform you that your order with reference [[${reference}]] has been confirmed.</p>
+    
+    <p>Details:</p>
+    
+    <ul>
+        <li>Total Amount: [[${Totalamount}]]</li>
+        <li>Order Reference: [[${reference}]]</li>
+    </ul>
+    
+    <p>Products:</p>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="product : ${products}">
+                <td th:text="${product.name}"></td>
+                <td th:text="${product.quantity}"></td>
+                <td th:text="${product.price}"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p>Thank you for shopping with us!</p>
+</body>
+</html>
